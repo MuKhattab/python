@@ -1,27 +1,4 @@
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-
-def encrypt(text, shift):
-    cyphar_text=''
-    for i in text:
-        orginal_alpha_index=alphabet.index(i)
-        cyphar_index=orginal_alpha_index + shift
-        if (cyphar_index > 26):
-            cyphar_index -=26
-        cyphar_text+=alphabet[cyphar_index]
-    print(f"the ecrypted text for: {text} is {cyphar_text}")
-
-
-def decrypt(cyphar, shift):
-    decrypt_text=''
-    for i in cyphar:
-        position=alphabet.index(i)
-        cyphar_index = position + shift
-        if (cyphar_index > 26):
-            cyphar_index -= 26
-        cyphar_text += alphabet[cyphar_index]
-    print(f"the ecrypted text for: {text} is {cyphar_text}")
-
-
 def ceaser (ceaser_type, text, shift):
     converted_text=''
     if ceaser_type == "encode":
